@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <!--  <nav>
     <div class="container">
       <div class="navbar-header container">
         <a class="navbar-brand" href="/"
@@ -14,6 +14,15 @@
             class="img-responsive"
             alt="İletişim Başkanlığı Logo"
         /></a>
+      </div>
+    </div>
+  </nav> -->
+
+  <nav>
+    <div class="container">
+      <div class="navbar-header container">
+        <div class="navbar-item1">LOGO</div>
+        <div class="navbar-item2">FIMER</div>
       </div>
     </div>
   </nav>
@@ -37,5 +46,23 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar-item1 {
+  background-color: rgb(179, 48, 48);
+  width: 50%;
+  height: 30px;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-item2 {
+  background-color: palegreen;
+  width: 50%;
+  height: 30px;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
