@@ -33,5 +33,6 @@ export default {
 <style scoped>
 .main {
   height: 100vh;
+  padding-top: 10%;
 }
 </style>

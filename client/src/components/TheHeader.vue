@@ -18,9 +18,9 @@
     </div>
   </nav> -->
 
-  <nav>
+  <nav class="navbar-fixed-top">
     <div class="container">
-      <div class="navbar-header container">
+      <div class="navbar-header">
         <div class="navbar-item1">LOGO</div>
         <div class="navbar-item2">FIMER</div>
       </div>
@@ -37,8 +37,13 @@ export default {
 </script>
 
 <style scoped>
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 nav {
-  height: 2%;
   padding: 2%;
   background-color: rgb(88, 85, 85);
 }

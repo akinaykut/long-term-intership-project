@@ -50,7 +50,6 @@ export default {
 
 <style scoped>
 .register {
-  background-color: rgb(7, 86, 205);
   width: 40%;
   border: 1px rgb(2, 2, 47) solid;
   padding: 2%;
