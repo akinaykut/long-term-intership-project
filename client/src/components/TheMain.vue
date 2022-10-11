@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container main">
     <component
       :is="loginOrRegister"
       @getLoginOrRegister="handleLoginOrRegister"
@@ -30,4 +30,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.main {
+  height: 100vh;
+}
+</style>
