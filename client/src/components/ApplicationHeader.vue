@@ -7,7 +7,7 @@
             <span class="step">1</span>
             <span class="steptext">Kişisel Bilgiler</span>
           </li>
-          <li class="">
+          <li class="middle-of-steps">
             <span class="step">2</span>
             <span class="steptext">Başvuru Detayı</span>
           </li>
@@ -39,6 +39,7 @@ ul {
 li {
   padding: 10px;
   border-radius: 5px;
+  background-color: darkgrey;
 }
 .application-header-left {
   padding: 0;
@@ -60,9 +61,11 @@ li {
   width: 1.3em;
   border-radius: 15px;
 }
-
+.middle-of-steps {
+  margin: 0 5px;
+}
 .active {
   color: #fff;
-  background-color: rgb(25, 181, 212);
+  background-color: rgb(25, 181, 212) !important;
 }
 </style>

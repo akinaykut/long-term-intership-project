@@ -45,7 +45,8 @@ export default {
 }
 nav {
   padding: 2%;
-  background-color: rgb(88, 85, 85);
+  background-color: rgb(243, 159, 42);
+  border-bottom: 1px darkgrey solid;
 }
 .navbar-header {
   display: flex;
