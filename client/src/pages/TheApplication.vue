@@ -3,8 +3,10 @@
     <the-header></the-header>
     <div class="content container">
       <application-header></application-header>
-      <application-type-panel></application-type-panel>
-      <application-main></application-main>
+
+      <!-- Personal details componenti active olduğunda panel de aktif olmalı -->
+      <application-type-panel v-if="isActive"></application-type-panel>
+      <application-main @activeComponent="setIsActive"></application-main>
     </div>
 
     <the-footer></the-footer>
@@ -25,6 +27,21 @@ export default {
     ApplicationHeader,
     ApplicationTypePanel,
     ApplicationMain,
+  },
+  data() {
+    return {
+      isActive: true,
+    };
+  },
+  methods: {
+    setIsActive(data) {
+      if (data === "personal-details") {
+        this.isActive = true;
+      } else {
+        this.isActive = false;
+      }
+      console.log(this.isActive);
+    },
   },
 };
 </script>

@@ -29,13 +29,23 @@
     </div>
     <div class="row">
       <div>
-        <button class="btn btn-success">İleri</button>
+        <button class="btn btn-success" @click="setActiveComponent">
+          İleri
+        </button>
       </div>
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    setActiveComponent() {
+      this.$emit("setActiveComponent", "application-details");
+    },
+  },
+};
+</script>
 
 <style scoped>
 .info-cell {

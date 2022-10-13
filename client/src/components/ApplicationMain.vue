@@ -1,15 +1,33 @@
 <template>
   <div class="application-main">
-    <component :is="activeSection"></component>
+    <component
+      :is="activeSection"
+      @setActiveComponent="setActiveSection"
+    ></component>
   </div>
 </template>
 
 <script>
+import PersonalDetails from "./PersonalDetails.vue";
+import ApplicationDetails from "./ApplicationDetails.vue";
+import ApplicationComplete from "./ApplicationComplete.vue";
+
 export default {
+  components: {
+    PersonalDetails,
+    ApplicationDetails,
+    ApplicationComplete,
+  },
   data() {
     return {
       activeSection: "personal-details",
     };
+  },
+  methods: {
+    setActiveSection(data) {
+      this.activeSection = data;
+      this.$emit("activeComponent", data);
+    },
   },
 };
 </script>
