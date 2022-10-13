@@ -18,8 +18,12 @@
         </ul>
       </div>
       <div class="col-lg-4 application-header-right">
-        <button class="btn btn-primary">Başvurularım</button>
-        <button class="btn btn-danger">Çıkış Yap</button>
+        <router-link to="/application/my-applications">
+          <button class="btn btn-primary">Başvurularım</button>
+        </router-link>
+        <router-link to="/"
+          ><button class="btn btn-danger">Çıkış Yap</button>
+        </router-link>
       </div>
     </div>
   </div>
