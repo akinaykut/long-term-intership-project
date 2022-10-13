@@ -1,8 +1,18 @@
 <template>
   <div class="application-main">
-    <h1>Hello world</h1>
+    <component :is="activeSection"></component>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      activeSection: "personal-details",
+    };
+  },
+};
+</script>
 
 <style scoped>
 .application-main {
